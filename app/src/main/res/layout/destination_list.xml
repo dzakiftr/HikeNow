@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_corner_white"
+    android:elevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/destinationpic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/durasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4D5N"
+            android:background="@color/textdark"
+            android:textColor="@color/light"
+            android:textStyle="bold"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:textSize="16dp"
+            android:layout_alignRight="@id/destinationpic"
+            android:layout_alignBottom="@id/destinationpic"
+            android:layout_margin="10dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/gunung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Gunung"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/textdark"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"/>
+        <TextView
+            android:id="@+id/tinggi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tinggi"
+            android:layout_below="@id/gunung"
+            android:textSize="16dp"
+            android:textColor="@color/textdark"/>
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/gunung"
+            android:textSize="16dp"
+            android:textColor="@color/textdark"/>
+    </RelativeLayout>
+
+</LinearLayout>
